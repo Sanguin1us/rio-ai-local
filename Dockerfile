@@ -31,8 +31,9 @@ RUN adduser --system --uid 1001 appuser
 # Copy built static files
 COPY --from=builder --chown=appuser:nodejs /app/dist ./dist
 
-# Copy proxy server
+# Copy proxy server and dependencies
 COPY --from=builder --chown=appuser:nodejs /app/server ./server
+COPY --from=builder --chown=appuser:nodejs /app/lib ./lib
 COPY --from=builder --chown=appuser:nodejs /app/package.json ./package.json
 COPY --from=builder --chown=appuser:nodejs /app/package-lock.json ./package-lock.json
 
