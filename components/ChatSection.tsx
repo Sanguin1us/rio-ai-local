@@ -732,16 +732,16 @@ export const ChatSection = () => {
 
   const suggestionChips = isEnglish
     ? [
-        { label: 'Write', prompt: 'Write a short poem about Rio.' },
-        { label: 'Learn', prompt: 'Teach me about the Pythagorean theorem.' },
-        { label: 'Code', prompt: 'Code a game of Pong in .html.' },
-        { label: 'Plan', prompt: 'Suggest a one-day itinerary in Rio.' },
+        { label: 'Write', prompt: 'Write a short poem about Rio' },
+        { label: 'Learn', prompt: 'Teach me about the Pythagorean theorem' },
+        { label: 'Code', prompt: 'Code a game of Pong in .html' },
+        { label: 'Plan', prompt: 'Suggest a one-day itinerary in Rio' },
       ]
     : [
-        { label: 'Escrever', prompt: 'Escreva um poema curto sobre o Rio.' },
+        { label: 'Escrever', prompt: 'Escreva um poema curto sobre o Rio' },
         { label: 'Aprender', prompt: 'Me ensine sobre o Teorema de Pitágoras' },
-        { label: 'Código', prompt: 'Code a game of Pong in .html.' },
-        { label: 'Planejar', prompt: 'Sugira um roteiro de um dia no Rio.' },
+        { label: 'Código', prompt: 'Crie um jogo de Pong em .html' },
+        { label: 'Planejar', prompt: 'Sugira um roteiro de um dia no Rio' },
       ];
 
   const handleSuggestionClick = (prompt: string) => {
